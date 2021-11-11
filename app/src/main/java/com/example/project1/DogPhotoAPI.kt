@@ -1,5 +1,7 @@
 package com.example.project1
 
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -12,9 +14,13 @@ object DogPhotoAPI {
     private val networkLoggingInterceptor =
         HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
+    private val moshi = Moshi.Builder()
+        .add(KotlinJsonAdapterFactory())
+        .build()
+
     private val retrofit = Retrofit.Builder()
         .client(OkHttpClient.Builder().addInterceptor(networkLoggingInterceptor).build())
-        .addConverterFactory(MoshiConverterFactory.create())
+        .addConverterFactory(MoshiConverterFactory.create(moshi))
         .baseUrl(BASE_URL)
         .build()
 
@@ -26,7 +32,7 @@ object DogPhotoAPI {
 
     object DogApi {
         val retrofitService: DogPhotoService by lazy {
-            DogPhotoAPI.retrofit.create(DogPhotoService::class.java)
+            retrofit.create(DogPhotoService::class.java)
         }
     }
 }

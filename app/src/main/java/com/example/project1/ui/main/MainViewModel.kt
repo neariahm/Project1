@@ -20,6 +20,7 @@ class MainViewModel : ViewModel() {
     fun getRandomDogPhoto(){
        viewModelScope.launch{
            _currentlyDisplayedDogPhoto.value = DogPhotoAPI.DogApi.retrofitService.getRandomDogPhoto()
+           Log.e("Neariah", "The results ")
        }
    }
 }
