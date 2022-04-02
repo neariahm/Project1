@@ -6,7 +6,7 @@ Dog of the Day App
 This project demonstrates how to make web API requests using network calls, how to parse API responses, and how to load images from a network location and display them.
 
 The completed app should:
-* Display a dog image (a jpg image is returned from calling the endpoint https://dog.ceo/api/breeds/image/random)
+* Display a random dog image
 * Have a button that lets the user generate a new image
 
 
