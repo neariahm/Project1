@@ -43,5 +43,5 @@ The completed app should:
 
 ## Helpful Resources
 * Android Basics Pathway: [Get and display data from the internet](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-2)
-* [This YouTube video explains additional Coil features](https://www.youtube.com/watch?v=IBaUjzn2Rgo)
+* Challenge: [This YouTube video explains additional Coil features](https://www.youtube.com/watch?v=IBaUjzn2Rgo)
 * Similar Exercise: [Inspirational Quotes Exercise](https://github.com/calren/InspirationalQuotesExercise)
