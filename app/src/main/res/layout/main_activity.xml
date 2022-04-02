@@ -7,15 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog of the Day"
+        android:textSize="40dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace">
+
+    </TextView>
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="426dp"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="458dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Woof" />
+        android:text="Woof"
+        android:layout_gravity="bottom" />
 </FrameLayout>
