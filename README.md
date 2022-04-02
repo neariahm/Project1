@@ -14,7 +14,7 @@ The completed app should:
 
 ### Dependencies
 
-* [Retrofit with Moshi Converter] (https://github.com/square/retrofit/tree/master/retrofit-converters/moshi?msclkid=56381962b2d111eca8064cdbfe36035f)
+* [Retrofit with Moshi Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/moshi?msclkid=56381962b2d111eca8064cdbfe36035f)
 * [Coil](https://github.com/coil-kt/coil)
 
 ### API
